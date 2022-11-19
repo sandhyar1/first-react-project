@@ -32,7 +32,7 @@ import person from './person'
 // export default NameList;
 function NameList(){
     const names =['bruce','clark','diana']
-    const persons = [...
+    const persons = {...names}
     const nameList = names.map((name,index) => <h2 key ={index}>{index} {name}</h2>)
     return <div>{nameList}</div>
 }

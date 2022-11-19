@@ -16,7 +16,7 @@ import NameList from "./NameList";
 function App() {
   return (
     <div className="App">
-    <NameList/>
+    {/*<NameList/>
     {/*<UserGreeting />
     {/*<ParentComponent />
     {/*<ClassClick />
