@@ -1,6 +1,8 @@
 import  logo from "./logo.svg";
 import "./App.css";
-import NameList from "./NameList";
+import Stylesheet from "./Stylesheet";
+import Inline from "./Inline";
+// import NameList from "./NameList";
 // import FunctionClick from "./components/FunctionClick";
 // import ClassClick from "./components/ClassClick";
 // import EventBind from "./components/EventBind";
@@ -12,10 +14,18 @@ import NameList from "./NameList";
 // import { render } from "@testing-library/react";
 // import Message from "./components/Message"
 // import Counter from "./components/Counter"
+import './AppStyles.css'
+import styles from './AppStyles.modules.css'
+
 
 function App() {
   return (
     <div className="App">
+    <h1 className="error">Error</h1>
+    <h1 className={styles.success}>Sucess</h1>
+    {/*<Inline />
+    {/*<Stylesheet primary={true} />
+   
     {/*<NameList/>
     {/*<UserGreeting />
     {/*<ParentComponent />
