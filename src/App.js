@@ -1,7 +1,7 @@
 import  logo from "./logo.svg";
 import "./App.css";
-import Stylesheet from "./Stylesheet";
-import Inline from "./Inline";
+import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
 // import NameList from "./NameList";
 // import FunctionClick from "./components/FunctionClick";
 // import ClassClick from "./components/ClassClick";
