@@ -1,7 +1,9 @@
 import  logo from "./logo.svg";
 import "./App.css";
-import Stylesheet from "./components/Stylesheet";
-import Inline from "./components/Inline";
+import FragmentDemo from "./components/FragmentDemo";
+//import Form from "./components/Form";
+// import Stylesheet from "./components/Stylesheet";
+// import Inline from "./components/Inline";
 // import NameList from "./NameList";
 // import FunctionClick from "./components/FunctionClick";
 // import ClassClick from "./components/ClassClick";
@@ -16,14 +18,16 @@ import Inline from "./components/Inline";
 // import Counter from "./components/Counter"
 // import './AppStyles.css'
 // import styles from './AppStyles.modules.css'
-import LifecycleA from "./LifecycleA";
+//import LifecycleA from "./LifecycleA";
+
 
 
 function App() {
   return (
     <div className="App">
-    
-    <LifecycleA />
+     <FragmentDemo/> 
+   {/*<Form />
+    {/*<LifecycleA />
     {/*<h1 className="error">Error</h1>
     <h1 className={styles.success}>Sucess</h1>
     {/*<Inline />
