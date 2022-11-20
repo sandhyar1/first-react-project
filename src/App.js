@@ -14,14 +14,17 @@ import Inline from "./components/Inline";
 // import { render } from "@testing-library/react";
 // import Message from "./components/Message"
 // import Counter from "./components/Counter"
-import './AppStyles.css'
-import styles from './AppStyles.modules.css'
+// import './AppStyles.css'
+// import styles from './AppStyles.modules.css'
+import LifecycleA from "./LifecycleA";
 
 
 function App() {
   return (
     <div className="App">
-    <h1 className="error">Error</h1>
+    
+    <LifecycleA />
+    {/*<h1 className="error">Error</h1>
     <h1 className={styles.success}>Sucess</h1>
     {/*<Inline />
     {/*<Stylesheet primary={true} />
