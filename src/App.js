@@ -1,6 +1,6 @@
-import  logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
-import FragmentDemo from "./components/FragmentDemo";
+//import FragmentDemo from "./components/FragmentDemo";
 //import Form from "./components/Form";
 // import Stylesheet from "./components/Stylesheet";
 // import Inline from "./components/Inline";
@@ -19,13 +19,13 @@ import FragmentDemo from "./components/FragmentDemo";
 // import './AppStyles.css'
 // import styles from './AppStyles.modules.css'
 //import LifecycleA from "./LifecycleA";
-
-
+import table from "./components/table";
 
 function App() {
   return (
     <div className="App">
-     <FragmentDemo/> 
+      <table />
+      {/*<FragmentDemo/> 
    {/*<Form />
     {/*<LifecycleA />
     {/*<h1 className="error">Error</h1>
@@ -38,20 +38,20 @@ function App() {
     {/*<ParentComponent />
     {/*<ClassClick />
   <FunctionClick />*/}
-    {/*<EventBind  />
+      {/*<EventBind  />
   {/* <Counter />*/}
-      { /*<Message />
+      {/*<Message />
       <Greet name="bruce" heroName="batman">
         <p>This is a children props</p></Greet>
        <Greet name="diana" heroName="batman" >
   <button>Submit</button></Greet>*/}
-        {/*<Greet name="clark" heroName="batman"  />*/}
+      {/*<Greet name="clark" heroName="batman"  />*/}
 
-       {/*<Welcome name="bruce" heroName="batman"></Welcome>
+      {/*<Welcome name="bruce" heroName="batman"></Welcome>
        <Welcome name="bruce" heroName="batman"></Welcome>
        <Welcome name="bruce" heroName="batman"></Welcome> 
 {/*<Hello />*/}
-         </div>
+    </div>
   );
 }
 
