@@ -1,25 +1,32 @@
 import logo from "./logo.svg";
 import "./App.css";
-import  PureComp  from "./components/PureComp";
-import RegComp from "./components/RegComp";
-import ParentComp from "./components/ParentComp";
-import RefsDemo from "./components/RefsDemo";
-import Input from "./components/Input";
-import FocusInput from "./components/FocusInput";
-//import table from "./components/table";
+import ClickCounter from "./components/ClickCounter";
+import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
     <div className="App">
-    <FocusInput />
-    {/*<Input />
-    /*<RefsDemo />
-    {/*<ParentComp/>
-    {/*<PureComp/>
-    <RegComp/>
+    <ClickCounter />
+    <HoverCounter />
     
-      {/*<table />
-      {/*<FragmentDemo/>*/}
+    {/*
+    <ErrorBoundary>
+    <Hero heroName="Batman"/>
+    </ErrorBoundary>
+
+    <ErrorBoundary>
+    <Hero heroName="Superman"/>
+    </ErrorBoundary>
+
+    <ErrorBoundary>
+    <Hero heroName="joker"/>
+    </ErrorBoundary>
+    <PortalDemo />
+<FRParentInput />*/}
     </div>
   );
 }
