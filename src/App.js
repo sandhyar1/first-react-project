@@ -7,7 +7,7 @@ import { UserProvider } from "./components/userContext";
 function App() {
   return (
     <div className="App">
-    <UserProvider>
+     <UserProvider value="sandhya">
     <ComponentC />
     </UserProvider>
   
