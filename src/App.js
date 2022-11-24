@@ -1,15 +1,27 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ComponentC from "./components/ComponentC";
-import { UserProvider } from "./components/userContext";
+import ClassCounter from "./ComponentsV2/ClassCounter";
+import UseStateCounter from "./ComponentsV2/UseStateCounter";
+import UseStateprev from "./ComponentsV2/UseStateprev";
+import UseStateObj from "./ComponentsV2/UseStateObj";
+import UseStateArray from "./ComponentsV2/UseStateArray";
+
 
 
 function App() {
   return (
     <div className="App">
-     <UserProvider value="sandhya">
-    <ComponentC />
-    </UserProvider>
+
+   
+   
+    {/*
+     <UseStateArray  />
+   
+    <UseStateObj />
+    <UseStateprev />
+    <ClassCounter />
+  <UseStateCounter/>*/}
+
   
     </div>
   )
