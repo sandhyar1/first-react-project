@@ -1,39 +1,39 @@
-import React from "react";
+import React ,{useReducer} from "react";
 import "./App.css";
 import logo from "./logo.svg";
-import ComponentC from "./ComponentsV2/ComponentC";
-import CounterOne from "./ComponentsV2/UseReducerCounterOne";
-import UseReducerCounter from "./ComponentsV2/UseReducerCounter";
-import UseReducerMultiple from "./ComponentsV2/UseReducerMultiple";
 import ComponentA from "./ComponentsV2/ComponentA";
-import CoponentB from "./ComponentsV2/ComponentB";
-//export const UserContext = React.createContext()
+import ComponenetB from "./ComponentsV2/ComponenetB";
+import ComponentC from "./ComponentsV2/ComponentC";
 
-//export const ChannelContext = React.createContext()
+export const CountContext = React.createContext();
+
+const intialState =0;
+const reducer = (state,action) =>{
+   switch(action){
+    case 'increment':
+        return state+1
+    case 'decrement':
+        return state -1
+    case 'reset':
+    return intialState
+    default:
+        return state
+   }
+
+}
 
 function App() {
+  const [count,dispatch] = useReducer(reducer,intialState)
   return (
+    <CountContext.Provider value ={{countState:count ,countDispatch:dispatch}}>
+
     <div className="App">
+    Count -{count}
      <ComponentA />
-     <ComponentB />
+     <ComponenetB />
      <ComponentC />
-   
-    {/*
-      <UseReducerMultiple />
-     <UseReducerCounter />
-    <UseReducerCounterOne/ >
-     <UserContext.Provider value ={"Sandhya"}>
-     <ChannelContext.Provider value={"Hii react"}>
-    <ComponentC />
-     </ChannelContext.Provider>
-    
-    <ComponentC />
-      </UserContext.Provider>
-     <Datafetching />
-    <UseEffectInterval />
-    <IntervaLCounter />*/}
-  
     </div>
+    </CountContext.Provider>
   )
 }
 
