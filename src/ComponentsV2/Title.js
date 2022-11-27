@@ -6,4 +6,4 @@ function  Title(){
     useCallback Hook
     </div>
 }
-export default  Title
+export default  React.memo(Title)

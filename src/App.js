@@ -10,10 +10,10 @@ function App() {
  
   return (
   <div className="App">
+  <useMemoCounter/>
   
-  <ParentComponent/>
-  
-  {/*<UseReducerDataFetch />
+  {/* <ParentComponent/>
+  <UseReducerDataFetch />
   <UseStateDatafetch/>*/}
 
     
