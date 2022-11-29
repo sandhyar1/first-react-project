@@ -1,19 +1,36 @@
-import React,{useState} from 'react'
+import React,{useState,useMemo} from 'react'
+//it only recomputes the cached value that one of the depebndency gonna change and that avoida the expensive calculation.
+//on every render.It is use for performance optimization.
+//cache the function -useCallback
+//cache the result-useMemo
 
-function useMemoCounter() {
-    const [Counterone,setCounterone] =useState(0)
-    const[counterTwo,setCounterTwo] = useState(0)
+function UseMemoCounter() {
+    const [counterOne,setcounterOne] =useState(0)
+    const[counterTwo,setcounterTwo] = useState(0)
 
     const incrementOne= () =>{
-        setCounterone(Counterone+1)
+        setcounterOne(counterOne+1)
     }
     const incrementTwo =() =>{
-        setCounterTwo(counterTwo+1)
+        setcounterTwo(counterTwo+1)
     }
+   const isEven= useMemo(() => {
+      let i=0
+       while(i<2000000) i++
+       return counterOne %2 === 0
+    },[counterOne])
+  
+    //   const isEven =>{
+    //   let i=0
+    //   while(i<2000000) i++//in this ui is getting slow and ui updates and both the counter slow because it is rendering.
+    //                        //by usingmemo hook it is solved.
+    //   return counterOne %2 === 0
+    // }
   return (
     <div>
     <div>
-    <button onClick ={incrementOne}>Counterone -{Counterone}</button>
+    <button onClick ={incrementOne}>Counterone -{counterOne}</button>
+    <span>{isEven  ? 'Even' : 'odd'}</span>
     </div>
     <div>
     <button onClick ={incrementTwo}>CounterTwo -{counterTwo}</button>
@@ -24,4 +41,4 @@ function useMemoCounter() {
   )
 }
 
-export default useMemoCounter
+export default UseMemoCounter
